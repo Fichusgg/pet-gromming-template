@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsitive Care - Pet Grooming, Sitting & Walking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Pawsitive Care</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Where Every Pet is Treated Like Family</h1>
+            <p>Professional and loving care for your furry friends.</p>
+            <button id="open-popup-btn" class="btn">Book an Appointment</button>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <i class="fas fa-cut"></i>
+                <h3>Grooming</h3>
+                <p>From a simple bath and brush to a full haircut, we'll have your pet looking and feeling their best.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-home"></i>
+                <h3>Pet Sitting</h3>
+                <p>In-home pet sitting to keep your pet comfortable and in their own environment while you're away.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-dog"></i>
+                <h3>Dog Walking</h3>
+                <p>Daily walks to give your dog the exercise and mental stimulation they need.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="container">
+        <h2 class="section-title">Pricing</h2>
+        <div class="pricing-table">
+            <div class="pricing-plan">
+                <h3>Basic Groom</h3>
+                <div class="price">$45</div>
+                <ul>
+                    <li>Bath & Blow Dry</li>
+                    <li>Brush Out</li>
+                    <li>Nail Trim</li>
+                    <li>Ear Cleaning</li>
+                </ul>
+                <button class="btn">Choose Plan</button>
+            </div>
+            <div class="pricing-plan featured">
+                <h3>Deluxe Groom</h3>
+                <div class="price">$65</div>
+                <ul>
+                    <li>Everything in Basic</li>
+                    <li>Haircut & Styling</li>
+                    <li>Teeth Brushing</li>
+                    <li>Paw Pad Trim</li>
+                </ul>
+                <button class="btn">Choose Plan</button>
+            </div>
+            <div class="pricing-plan">
+                <h3>Walking/Sitting</h3>
+                <div class="price">$25/hr</div>
+                <ul>
+                    <li>30 or 60 Minute Walks</li>
+                    <li>In-Home Visits</li>
+                    <li>Feeding & Playtime</li>
+                    <li>Daily Updates</li>
+                </ul>
+                <button class="btn">Choose Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container">
+        <h2 class="section-title">Our Happy Clients</h2>
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300x300.png?text=Happy+Dog+1" alt="Happy Dog 1">
+            <img src="https://via.placeholder.com/300x300.png?text=Happy+Cat+1" alt="Happy Cat 1">
+            <img src="https://via.placeholder.com/300x300.png?text=Happy+Dog+2" alt="Happy Dog 2">
+            <img src="https://via.placeholder.com/300x300.png?text=Happy+Cat+2" alt="Happy Cat 2">
+            <img src="https://via.placeholder.com/300x300.png?text=Happy+Dog+3" alt="Happy Dog 3">
+            <img src="https://via.placeholder.com/300x300.png?text=Happy+Cat+3" alt="Happy Cat 3">
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="about-grid">
+            <div class="about-item">
+                <i class="fas fa-heart"></i>
+                <h3>Passionate Caretakers</h3>
+                <p>Our team is made up of dedicated animal lovers.</p>
+            </div>
+            <div class="about-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safe & Secure</h3>
+                <p>We are insured and bonded for your peace of mind.</p>
+            </div>
+            <div class="about-item">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Flexible Scheduling</h3>
+                <p>Easy and convenient online booking to fit your schedule.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Pawsitive Care is simply the best! My dog gets so excited when he sees their van pull up. The groomers are so gentle and do a fantastic job."</p>
+                <cite>- Sarah L.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"I was so nervous leaving my cat for the first time, but the sitter sent me daily updates and photos. I could tell my cat was happy and well cared for."</p>
+                <cite>- Mark T.</cite>
+            </div>
+        </div>
+    </section>
+
+    <div id="appointment-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="section-title">Request an Appointment</h2>
+            <form id="appointment-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone">
+                <select name="service" required>
+                    <option value="">Select a Service</option>
+                    <option value="grooming">Grooming</option>
+                    <option value="sitting">Pet Sitting</option>
+                    <option value="walking">Dog Walking</option>
+                </select>
+                <textarea name="message" placeholder="Tell us about your pet and preferred dates..."></textarea>
+                <button type="submit" class="btn">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> contact@pawsitivecare.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Pawsitive Lane, Happy Town</p>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Pawsitive Care. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
